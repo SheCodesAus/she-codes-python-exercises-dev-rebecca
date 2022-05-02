@@ -1,5 +1,8 @@
 # Q1) 
 
+from sre_constants import FAILURE
+
+
 moths_in_house = True
 
 if moths_in_house:
@@ -41,3 +44,31 @@ elif light_colour == "Amber" and car_detected:
 
 #Q4)
 
+height = int(input("Enter your height in cm. "))
+
+if height >= 120:
+  print("Hop on!")
+else:
+  print("Sorry, not today :(")
+
+# Q5)
+
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+
+if username == "fleur" and password == "password123":
+  print(f"Username: {username}\nPassword: {password}\nCorrect!")
+else:
+  print (f"Username: {username}\nPassword: {password}\nIncorrect!")
+
+# Q6)
+
+at = "@"
+dot = "."
+
+email = input("Enter your email address: ")
+
+if at in email and dot in email:
+  print(f"Email: {email}\nValid email address.")
+else:
+  print(f"Email: {email}\nInvalid email address.")
