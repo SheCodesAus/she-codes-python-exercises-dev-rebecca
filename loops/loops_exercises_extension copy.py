@@ -18,16 +18,27 @@ for item in groceries:
  
 print("===Izzy's Food Emporium===")
 
-for item in groceries:
-  print(f"{item[0]} {item[1]}")
+# for item in groceries:
+#   print(f"{item[0]} {item[1]}")
+
+# for amount in list:
+#   print(amount)
+
+# for item in groceries:
+#   print(item[1])
+
+# for item in groceries:
+#   print(item[1] * amount)
+
+new_list = []
 
 for amount in list:
-  print(amount * item[1])
+  for item in groceries:
+    multiplied_list = item[1] * amount
+new_list.append(multiplied_list)
+# print(new_list)
 
 print("=====================")
-
-
-
 
 
 
