@@ -55,6 +55,8 @@ while counter < length:
 
 number = int(input("Enter a number: "))
 
+print(f"Pyramid size: {number}")
+
 for i in range(0, number):
   stars = i + 1
   print("*" * stars)
@@ -67,6 +69,8 @@ number = int(input("Enter a number: "))
 spaces_list = []
 stars_list = []
 counter = 0
+
+print(f"Pyramid size: {number}")
 
 for i in range(0, number):
   stars = i + 1 # Get as many lines of stars as the user requested
