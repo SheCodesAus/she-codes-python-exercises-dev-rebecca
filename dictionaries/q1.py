@@ -24,3 +24,7 @@ quantity = {
 #     "Carrots": 8,
 #     "Oranges": 5
 # }
+
+for item in prices:
+    total = "{:.2f}".format(quantity[item] * prices[item])
+    print(f"{quantity[item]} {item} @ {prices[item]} = {total}")
