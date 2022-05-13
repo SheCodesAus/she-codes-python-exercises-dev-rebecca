@@ -21,7 +21,7 @@ with open("csv_files/colours_20_simple.csv") as csv_file:
   for row in reader:
     colours.append(row)
 
-colours.pop(-0) # Removing "English HEX RGB title as seen in exercise"
+colours.pop(-0) # Removing "English HEX RGB" title as seen in exercise
 
 for colour in colours:
   print(f"{colour[2]}, {colour[1]}, {colour[0]}")
